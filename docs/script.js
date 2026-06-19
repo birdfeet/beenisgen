@@ -7,22 +7,6 @@ function auto_height(elem) {  /* javascript */
 //Make the DIV element draggagle:
 dragElement(document.getElementById("mydiv"));
 
-window.onload = function(){
-var box = document.getElementById("mydiv");
-box.addEventListener('touchmove', function(e){
-
-  var touchLocation = e.targetTouches[0];
-  box.style.left = touchLocation.pageX + 'px';
-  box.style.top = touchLocation.pageY + 'px';
-})
-
-box.addEventListener('touchend', fucntion(e){
-  var x = parseInt(box.style.left);
-  var y = parseInt(box.style.top);
-
-})
-}
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
